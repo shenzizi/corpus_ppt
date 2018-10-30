@@ -6,6 +6,7 @@ This slide is made by Reveal.js. The topic is about designing of linguistics cor
 - What is the difference btw UI & UX?
 - Basic principle of UI(examples)
 - Basic principle of UX(examples)
+- Introduction to design guildline
 - Architecture information
 -----------
 - Review Copens (BEFORE / AFTER)
@@ -13,7 +14,7 @@ This slide is made by Reveal.js. The topic is about designing of linguistics cor
 - Specific design about corpus interface
 - online corpus(previous studies)
 -----------
-- Introduction to html5(DOM, tags)
+- Introduction to html5(DOM, elements)
 - Introduction to css3(css grid)
 - What is RWD? 
 - Introduction to JS
