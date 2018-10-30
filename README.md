@@ -1,5 +1,25 @@
 ## Topic
-This slide is made by Reveal.js. The topic is about designing of linguistics corpus interface.  
+This slide is made by Reveal.js. The topic is about designing of linguistics corpus interface. 
+- What is good web design?
+- Why we need to know UI/UX
+- Why UI/UX is important?(statistics)
+- What is the difference btw UI & UX?
+- Basic principle of UI(examples)
+- Basic principle of UX(examples)
+- Architecture information
+-----------
+- Review Copens (BEFORE / AFTER)
+-----------
+- Specific design about corpus interface
+- online corpus(previous studies)
+-----------
+- Introduction to html5(DOM, tags)
+- Introduction to css3(css grid)
+- What is RWD? 
+- Introduction to JS
+-----------
+- Implement corpus interface( concordance )
+
 
 ## Reveal.js
 A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://revealjs.com/).
