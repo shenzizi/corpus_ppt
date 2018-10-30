@@ -17,7 +17,7 @@ This slide is made by Reveal.js. The topic is about designing of linguistics cor
 - Introduction to html5(DOM, elements)
 - Introduction to css3(css grid)
 - What is RWD? 
-- Introduction to JS
+- Introduction to JS (AJAX request)
 -----------
 - Implement corpus interface( concordance )
 
