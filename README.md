@@ -1,5 +1,5 @@
 ## Topic
-This slide is made by Reveal.js. The topic is about designing of linguistics corpus interface. 
+This slide is made by Reveal.js. The topic is about designing of corpora interface. 
 - What is good web design?
 - Why we need to know UI/UX
 - Why UI/UX is important?(statistics)
@@ -12,7 +12,7 @@ This slide is made by Reveal.js. The topic is about designing of linguistics cor
 - Review Copens (BEFORE / AFTER)
 -----------
 - Specific design about corpus interface
-- online corpus(previous studies)
+- online corpora(previous studies)
 -----------
 - Introduction to html5(DOM, elements)
 - Introduction to css3(css grid)
