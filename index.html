@@ -4,16 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
 	<title>reveal.js</title>
-
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/black.css">
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/theme/night.min.css"> -->
-	<!-- <link rel="stylesheet" href="plugin/title-footer/title-footer.css"> -->
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/tomorrow-night-bright.min.css"> -->
-
-	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
 	 crossorigin="anonymous">
@@ -128,7 +121,7 @@
 			border: 0;
 			height: 0;
 			border-top: none;
-			border-bottom: 1px solid pink;
+			border-bottom: 1px solid #ff7c80;
 		}
 
 		.grid-btw {
@@ -153,12 +146,16 @@
 		}
 
 		strong {
-			color: yellow;
+			color: #f49c2c;
 		}
 
 		span.example {
 			margin-left: 15px;
 			font-size: 20px;
+		}
+
+		.reveal .controls button {
+			color: #16bac5;
 		}
 	</style>
 </head>
@@ -193,8 +190,6 @@
 				<p><i class="fas fa-angle-double-right"></i>聊聊WEB好設計(UI/UX)</p>
 				<p><i class="fas fa-angle-double-right"></i>聊聊語料庫介面設計</p>
 				<p><i class="fas fa-angle-double-right"></i>COPENS 改頭換面</p>
-				<p><i class="fas fa-angle-double-right"></i>前端起手式 HTML/CSS/JS</p>
-				<p><i class="fas fa-angle-double-right"></i>前端寫起來！</p>
 			</section>
 			<section>
 				<section>
@@ -205,8 +200,19 @@
 				<section>
 					<h2>語料庫介面 很重要嗎？</h2>
 					<hr>
-					<q style="font-size: 26px">The most used and cited corpora in the public domain tend to be those which enable
-						the easiest and fastest extraction of relevant data. --A New Wordtree Corpus Interface </q>
+					<q style="font-size: 26px">The most <strong>used and cited</strong> corpora in the public domain tend to be those
+						which enable<strong>the easiest and fastest</strong> extraction of relevant data. --A New Wordtree Corpus
+						Interface </q>
+					<aside class="notes">
+						<q style="font-size: 26px"> Many tools are designed by scientists who may have acquired the necessary
+							programming and software engineering skills, but who are lacking experience and training in user
+							interface design and usability engineering. As a result, many tools are functionally perfect, but an
+							obvious mess as far as usability aspects are concerned. </q>
+						<q>Potentially useful corpora are often underused because they lack
+							online interfaces, or because their interfaces were originally designed for lexicographers and
+							information scientists rather than for language teachers, language learners, and researchers in applied
+							linguistics.</q>
+					</aside>
 				</section>
 				<section>
 					<h2>語料庫介面 很重要嗎？</h2>
@@ -218,10 +224,10 @@
 					<p><i class="fas fa-bullseye"></i>學一套介面設計原則 放諸四海皆準(?)</p>
 				</section>
 				<section>
-					<h2>語料庫介面千百種?</h2>
+					<h2>語料呈現介面類型?</h2>
 					<hr>
 					<p><i class="fas fa-bullseye"></i>Graphic user interface (GUI) </p>
-					<p><i class="fas fa-bullseye"></i>Web-based interface</p>
+					<p><i class="fas fa-bullseye"></i><strong>Web-based interface</strong></p>
 					<p><i class="fas fa-bullseye"></i>command-line interfaces</p>
 				</section>
 			</section>
@@ -241,7 +247,7 @@
 					<p><a href="https://www.sketchengine.eu/" target="_blank">Sketch Engine</a></p>
 					<p> <a href="https://corpus.byu.edu/coca/" target="_blank">COCA</a></p>
 					<p><a href="http://www.natcorp.ox.ac.uk/" target="_blank">BNC</a></p>
-					<h2><a href="http://lopen.pnguistics.ntu.edu.tw/copens/about_copens/" target="_blank">COPENS</a> </li>
+					<p><a href="http://lopen.linguistics.ntu.edu.tw/copens/about_copens/" target="_blank">COPENS</a></p>
 				</section>
 				<section>
 					<h2>什麼因素影響你對網站的評價？</h2>
@@ -254,23 +260,38 @@
 				<section>
 					<h2>什麼因素影響你對網站的評價？</h2>
 					<hr>
-					<p>User interface(UI)</p>
-					<p>User experience(UX)</p>
-					<p>Interactive design</p>
-					<p>Human–computer interaction</p>
-					<p>Information architecture</p>
+					<div>
+						<p>User interface(UI)</p>
+						<p>User experience(UX)</p>
+						<p>
+							<a href="https://www.interaction-design.org/literature/article/what-is-interaction-design" target="_blank">Interactive
+								design</a></p>
+						<p><a href="https://www.interaction-design.org/literature/topics/human-computer-interaction" target="_blank">Human–computer
+								interaction</p></a>
+						<p><a href="https://www.uxbooth.com/articles/complete-beginners-guide-to-information-architecture/" target="_blank">Information
+								architecture</a></p>
+					</div>
+				</section>
+				<section>
+					<h2>什麼因素影響你對網站的評價？</h2>
+					<hr>
+					<div class="grid-btw">
+						<img src="https://cdn-images-1.medium.com/max/2000/1*VGKkZwpf2Dg1m6NG7NTr5A.jpeg">
+						<img src="https://public-media.interaction-design.org/images/uploads/4435d8bad7a3a665cef9059d0669affb.jpeg">
+					</div>
 				</section>
 				<section>
 					<h2>普世web介面設計</h2>
 				</section>
 				<section>
-					<h2>介面設計原則</h2>
+					<h2>介面設計最重要的是</h2>
 					<hr>
+					<p><strong>Don't make me think!</strong></p>
 					<p>Don't make me think!</p>
 					<p>Don't make me think!</p>
-					<p>Don't make me think!</p>
-					<q>when I look at a Web page it should be self-evident.
-						Obvious. Self-explanatory. I should be able to “get it”—what it is and how to use it—without expending any
+					<q>when I look at a Web page it should be <strong>self-evident.</strong>
+						Obvious. Self-explanatory. I should be able to <strong>“get it”</strong>—what it is and how to use it—without
+						expending any
 						effort thinking about
 						it. --Steve Krug</q>
 				</section>
@@ -300,24 +321,28 @@
 					<img src="search_flight_confusing.png" width=500 height=600>
 				</section>
 				<section>
-					<h2>Things that make us think</h2>
+					<h2>較好的設計...</h2>
 					<hr>
 					<img src="search_flight_simple.png">
 				</section>
 				<section>
 					<h2>You can’t make everything self-evident</h2>
 					<hr>
-					<p>something original or groundbreaking or something that’s inherently complicated...</p>
-					<p>you have to settle for self-explanatory. </p>
-					<p>On a self-explanatory page, it takes a little thought to “get it”—but only a little.</p>
+					<!-- <p>something original or groundbreaking or something that’s inherently complicated...</p>
+					<p>you have to settle for self-explanatory. </p> -->
+					<p><i class="fas fa-angle-right"></i>系統真的很複雜</p>
+					<p><i class="fas fa-angle-right"></i>但你至少要可以自圓其說</p>
+					<p><i class="fas fa-angle-right"></i>On a self-explanatory page, it takes a little thought to “get it”—but only a
+						little.</p>
 				</section>
 				<section>
 					<h2>You can’t make everything self-evident</h2>
 					<hr>
-					<p>The appearance of things (like size, color, and
+					<!-- <p>The appearance of things (like size, color, and
 						layout), their well-chosen names, and the small amounts of carefully crafted text should all work
-						together to create a sense of nearly effortless understanding.</p>
-					<p>RULE: If you can’t make something self-evident, you at least need to make it self-explanatory.</p>
+						together to create a sense of nearly effortless understanding.</p> -->
+					<p>仔細處理size/color/layout/naming,減少使用者負擔</p>
+					<p>RULE: If you can’t make something self-evident, you at least need to make it <strong>self-explanatory</strong>.</p>
 				</section>
 				<section>
 					<h2>Why is all of this so important?</h2>
@@ -327,18 +352,25 @@
 				<section>
 					<h2>How we really use the Web</h2>
 					<hr>
-					<p>We’re usually on a mission.</p>
-					<p>We know we don’t need to read everything. Scanning is how we find the relevant bits</p>
+					<p>We’re usually on a <strong>mission.</strong></p>
+					<p>We know we don’t need to read everything. <strong>Scanning</strong> is how we find the relevant bits</p>
 				</section>
 				<section>
 					<h2>How we really use the Web</h2>
 					<hr>
 					<img src="scan2.png">
 				</section>
-				<section>
+				<!-- <section>
 					<h2>Mental models</h2>
 					<hr>
 					https://www.nngroup.com/articles/mental-models/
+					<p>It's a model of what users know (or think theyknow) about a system</p>
+					<p>使用者根據mental model 對系統產生預測,並決定他們的行為</p>
+					<p>設計者目標：做好UI以讓使用者能</p>
+					<p>不同使用者面對相同的介面,會建構不同的menal model</p>
+					<p>the common gap between designers' and users' mental models</p>
+					<p>設計者知道太多==>以為設計的feature都很容易理解</p>
+
 					<p>it's a model of what users know (or think they know) about a system such as your website</p>
 					<p>A mental model is based on belief, not facts: that is, it's a model of what users know (or think they
 						know) about a system such as your website. Hopefully, users' thinking is closely related to reality because
@@ -353,8 +385,8 @@
 						feature is easy to understand. Users' mental models of the UI are likely to be somewhat more deficient,
 						making it more likely for people to make mistakes and find the design much more difficult to use.</p>
 					<img src="https://media1.mensxp.com/media/content/2017/Nov/here-is-how-you-can-develop-your-own-mind-palace-740x500-0-1509703537.gif">
-				</section>
-				<section>
+				</section> -->
+				<!-- <section>
 					<h2>慣例 慣例 慣例！</h2>
 					<hr>
 					<p>Users spend most of their time on websites other than yours. Thus a big part of customers' mental models
@@ -362,7 +394,7 @@
 						alike.</p>
 					<p><i class="far fa-smile"></i>Changing the color of visited links (recommended to help navigation)</p>
 					<p><i class="far fa-smile"></i>Placing the shopping cart link in the upper right corner of page</p>
-				</section>
+				</section> -->
 				<section>
 					<h2>介面設計原則</h2>
 					<hr>
@@ -374,7 +406,7 @@
 				<section>
 					Place users in control of the interface
 					<hr>
-					<p>Make actions reversible (be forgiving)</p>
+					<p>Make actions <strong>reversible</strong> (be forgiving)</p>
 					<div class="grid-btw">
 						<img src="https://theblogimages.adobe.com/wp-content/uploads/2018/01/image10-2.png" alt="" class="article-image image-media-img"
 						 draggable="false">
@@ -387,14 +419,14 @@
 					<hr>
 					<p>Create an easy-to-navigate interface</p>
 					<p><i class="far fa-smile"></i>Provide visual cues.</p>
-					<p><i class="far fa-smile"></i>Predictabipty</p>
+					<p><i class="far fa-smile"></i><strong>Predictability</strong></p>
 					<img width=600 src="https://theblogimages.adobe.com/wp-content/uploads/2018/01/image15-e1516843811107.jpg" alt=""
 					 class="article-image image-media-img" draggable="false">
 				</section>
 				<section>
 					Place users in control of the interface
 					<hr>
-					<p>Provide informative feedback (Be acknowledging)</p>
+					<p>Provide informative <strong>feedback</strong> (Be acknowledging)</p>
 					<div class="grid-btw">
 						<img src="https://theblogimages.adobe.com/wp-content/uploads/2018/01/image18.gif" alt="" class="article-image image-media-img"
 						 draggable="false">
@@ -437,29 +469,108 @@
 					<h2>Make it comfortable for a user to interact with a product</h2>
 					<hr>
 					<p>Apply Fitts’s Law to interactive elements</p>
-					<p>the time to acquire a target is a function of the distance to and size of the
+					<p>為起始點(滑鼠游標)與目標物(按鈕或其他操控物件)之間的距離和目標物的大小，決定了從起始點移動到目標所花費的時間</p>
+					<p>big buttons are easier to interact with</p>
+					<!-- <p>the time to acquire a target is a function of the distance to and size of the
 						target. This means that it’s better to design large targets for important functions (big buttons are easier
-						to interact with).</p>
+						to interact with).</p> -->
 					<img src="fitts_law.png">
 				</section>
 				<section>
-					<p>Make it comfortable for a user to interact with a product</p>
+					<h2>Make it comfortable for a user to interact with a product</h2>
+					<hr>
+					<p>Design accessible interfaces</p>
+					<p>design for low vision, blindness, hearing impairments...</p>
+					<p>Color--strong impact on accessibility. </p>
+					<div class="grid-btw">
+						<img src="accessible_no.png" />
+						<img src="accessible_yes.png" />
+					</div>
+				</section>
+				<section>
+					<h2>Make it comfortable for a user to interact with a product</h2>
 					<hr>
 					<p>Use real-world metaphors</p>
 					<img width=600 src="https://theblogimages.adobe.com/wp-content/uploads/2040/02/image13.gif" alt="" class="article-image image-media-img"
 					 draggable="false">
 				</section>
 				<section>
+					<h2>Make it comfortable for a user to interact with a product</h2>
+					<hr>
+					<p>Engineer error</p>
+					<img src="engineer_error.png">
+				</section>
+				<section>
+					<h2>Make it comfortable for a user to interact with a product</h2>
+					<hr>
+					<p>Error recovery</p>
+					<img src="error_recovery.png">
+				</section>
+				<section>
+					<h2>Make it comfortable for a user to interact with a product</h2>
+					<hr>
+					<p>Protect a user’s work</p>
+					<img src="save_work.png" />
+				</section>
+				<section>
 					<h2>Reduce cognitive load</h2>
 					<hr>
+					<p><i class="fas fa-angle-right"></i>human working memory can handle seven-plus-or-minus two <strong>“chunks”</strong> of information--George Miller</p>
+					<p><i class="fas fa-angle-right"></i>Chunking for sequences of information or actions</p>
+					<p><i class="fas fa-angle-right"></i>without normal spacing==>incorrectly-captured phone numbers</p>
+					<img src="chunking.png" />
+				</section>
+				<section>
+					<h2>Reduce cognitive load</h2>
+					<hr>
+					<p><i class="fas fa-angle-right"></i>Reduce the number of actions required to complete the task</p>
+					<p><i class="fas fa-angle-right"></i><strong>three-click rule</strong>, which suggests the user of a product should be able to find any information with no more
+						than three mouse clicks.</p>
+				</section>
+				<section>
+					<h2>Reduce cognitive load</h2>
+					<hr>
+					<p><strong>Recognition</strong> over recall</p>
+					<div class="grid-btw">
+						<img src="https://s3.amazonaws.com/media.nngroup.com/media/editor/2014/05/12/2014-05-12-bing1.png">
+						<img src="https://s3.amazonaws.com/media.nngroup.com/media/editor/2014/05/12/2014-5-12-amazon.png">
+					</div>
+				</section>
+				<section>
+					<h2>Reduce cognitive load</h2>
+					<hr>
+					<p>Promote visual clarity</p>
+					<ul>
+						<li>Avoid presenting too much information at one time on the screen</li>
+						<li>grouping similar items together, numbering items, and using headings and prompt text</li>
+					</ul>
 				</section>
 				<section>
 					<h2>Make user interfaces consistent</h2>
 					<hr>
+					<p><i class="fas fa-angle-right"></i>The main idea of consistency is the idea of <strong>transferable knowledge</strong></p>
+					<p><i class="fas fa-angle-right"></i><strong>Visual consistency</strong> (Consistency of look)</p>
+					<p><i class="fas fa-angle-right"></i>The same colors, fonts, and icons should be present throughout the product</p>
+					<img src="submit_btn.png">
 				</section>
 				<section>
-					The Psychology Principles Every UI/UX Designer Needs to Know
+					<h2>Make user interfaces consistent</h2>
+					<hr>
+					<p>Functional consistency (Consistency of behavior)<span class="example">e.g.,buttons and menu items, should not
+							change
+							within a product.</span></p>
+					<ul>
+						<li>Follow platform conventions</li>
+						<li>Don’t reinvent patterns<span class="example">Popular patterns become conventions and the majority of users
+								are
+								familiar with them.</span></li>
+						<li>Don’t try to reinvent terminology</li>
+					</ul>
+					<img src="shopping_cart.png">
 				</section>
+				<!-- <section>
+					The Psychology Principles Every UI/UX Designer Needs to Know
+				</section> -->
 				<section>
 					<h2>設計懶人包</h2>
 					<hr>
@@ -488,8 +599,8 @@
 					<h2>了解你的使用者--Persona</h2>
 					<hr>
 					<img width=600 src="persona.png" />
-					<a href="https://theblog.adobe.com/putting-personas-to-work-in-ux-design-what-they-are-and-why-theyre-important/"
-					 target="_blank">persona</a></p>
+					<!-- <a href="https://theblog.adobe.com/putting-personas-to-work-in-ux-design-what-they-are-and-why-theyre-important/"
+					 target="_blank">persona</a></p> -->
 				</section>
 				<section>
 					<h2>了解你的使用者--Persona</h2>
@@ -510,12 +621,9 @@
 				<section>
 					<h2>為什麼了解你的使用者很重要?</h2>
 					<hr>
-					<p>了解(期待/需求)==>滿足(期待/需求)</p>
-					<p>從使用者角度切入,而非設計者觀點<p>
-							<p>
-								提供設計問題的解決方案
-								<span class="example">e.g.bigger ‘Send’ button </span>
-							</p>
+					<p><i class="fas fa-angle-right"></i>了解(期待/需求)==>滿足(期待/需求)</p>
+					<p><i class="fas fa-angle-right"></i>從使用者角度切入,而非設計者觀點<p>
+					<p><i class="fas fa-angle-right"></i>	提供設計問題的解決方案<span class="example">e.g.bigger ‘Send’ button </span></p>
 				</section>
 				<section>
 					<h2>語料庫大哉問</h2>
@@ -546,11 +654,11 @@
 				<section>
 					<h2>介面可以如何設計？</h2>
 					<hr>
-					<p>符合不同TA的需求,同時提供簡易跟困難的操作</p>
-					<p>專業術語要有平易近人的解釋</p>
-					<p>良好的第一印象,使用流暢 </p>
-					<p>資料查找容易,資料呈現看得懂！</p>
-					<p>資料視覺化,幫助探索語析</p>
+					<p><i class="fas fa-angle-right"></i>符合不同TA的需求,同時提供簡易跟困難的操作</p>
+					<p><i class="fas fa-angle-right"></i>專業術語要有平易近人的解釋</p>
+					<p><i class="fas fa-angle-right"></i>良好的第一印象,使用流暢 </p>
+					<p><i class="fas fa-angle-right"></i>資料查找容易,資料呈現看得懂！</p>
+					<p><i class="fas fa-angle-right"></i>資料視覺化,幫助探索語析</p>
 				</section>
 				<section>
 					<h2>語料庫介面呈現</h2>
@@ -580,7 +688,8 @@
 						<p>4/5 participants BoxGreen.co (left) > GuiltFree.sg (right)</p>
 						<p>more attractive and informational</p>
 						<p>considered the pictures, fonts, and colors more appealing.</p>
-						<p> When—as with these two sites—the prices and offerings are fairly similar between two companies, the design of
+						<p> When—as with these two sites—the prices and offerings are fairly similar between two companies, the design
+							of
 							each website becomes a major deciding factor.</p>
 					</aside>
 				</section>
@@ -620,19 +729,24 @@
 				<section>
 					<h2>令人信任的網站--Connected to the Rest of the Web</h2>
 					<hr>
-					<div style="text-align:left"><i class="far fa-meh-rolling-eyes"></i></div>
-					<p>無法被第三方review, 跟外界絕緣==>想隱藏什麼?小小小公司？</p>
-					<p>親朋好友乃至網友都不推薦？</p>
-					<div style="text-align:left"><i class="far fa-smile"></i></div>
-					<p>喜歡看網友的quotes,case studies</p>
-					<p>更信任有external sites推薦你！</p>
+					<div class="grid-btw">
+						<div>
+							<div style="text-align:left"><i class="far fa-meh-rolling-eyes"></i></div>
+							<p>無法被第三方review, 跟外界絕緣==>想隱藏什麼?小小小公司？</p>
+							<p>親朋好友乃至網友都不推薦？</p>
+							<div style="text-align:left"><i class="far fa-smile"></i></div>
+							<p>喜歡看網友的quotes,case studies</p>
+							<p>更信任有external sites推薦你！</p>
+					  <div>
+						<img width=500 src="fontawesome.png">
+					</div>
 				</section>
 				<section>
 					<h2>Advanced query</h2>
 					<hr>
-					<p>大量資料,撈出想要的？</p>
-					<p>Basic search vs. Advanced search</p>
-					<p>有別於一般網站的基本搜尋</p>
+					<p><i class="fas fa-angle-right"></i>大量資料,撈出想要的？</p>
+					<p><i class="fas fa-angle-right"></i>Basic search vs. Advanced search</p>
+					<p><i class="fas fa-angle-right"></i>有別於一般網站的基本搜尋</p>
 				</section>
 				<section>
 					<h2>Advanced query</h2>
@@ -648,7 +762,7 @@
 					<h2>Advanced query--搜尋面板位在哪?</h2>
 					<hr>
 					<p>所有搜尋條件全呈現在UI上</p>
-					<a href="https://careers.microsoft.com/us/en/search-results?rt=professional" target="_blank">Microsoft careers</a>
+					<p><a href="https://careers.microsoft.com/us/en/search-results?rt=professional" target="_blank">Microsoft careers</a></p>
 					<p>user can easily scan them ==> user friendly</p>
 					<p>資料量大時,work well</p>
 					<p>壞處：占空間</p>
@@ -657,8 +771,8 @@
 					<h2>Advanced query----搜尋面板位在哪?</h2>
 					<hr>
 					<p>只呈現常用的搜尋條件,Clicking ‘More’ option</p>
-					<a href="https://www.linkedin.com/jobs/" target="_blank">Linkin</a>
-					<a href="https://www.atlassian.com/software/jira/features" target="_blank">Jira</a>
+					<p><a href="https://www.linkedin.com/jobs/" target="_blank">Linkin</a>	<a href="https://www.atlassian.com/software/jira/features" target="_blank">Jira</a></p>
+				
 					<p>當有常用搜尋項目時,work well</p>
 					<p>使用者無需在意他們不需要的細節</p>
 					<p>壞處：點擊數++, 資料量大不適合</p>
@@ -710,23 +824,49 @@
 				<section>
 					<h2>Advanced query----搜尋時常用的UI元件</h2>
 					<hr>
-					<p>Radio button list</p>
+					<div class="grid-btw">
+						<div>
+							<p>Radio button list</p>
+							<p><i class="fas fa-angle-right"></i>select one value</p>
+							<p><i class="fas fa-angle-right"></i>user has to execute search explicitly after making selections.</p>
+						</div>
+							<img src="https://uxdworld.files.wordpress.com/2018/07/linkedin-21.jpg">
+					</div>
 				</section>
 				<section>
 					<h2>Advanced query----搜尋時常用的UI元件</h2>
 					<hr>
-					<p>Visual icons</p>
+					<p>Visual icon</p>
+					<div class="grid-btw">
+						<div>
+							<p><i class="fas fa-angle-right"></i>Visuals provide a good and appealing way to present information.</p>
+							<p><i class="fas fa-angle-right"></i>Providing tooltips along with icons/visuals</p>
+							<p><i class="fas fa-angle-right"></i>Standard icons/visuals</p>
+						</div>
+						<div>
+						<img src="https://uxdworld.files.wordpress.com/2018/07/amazon-3.jpg">
+						<img src="https://uxdworld.files.wordpress.com/2018/07/amazon-11.jpg">
+						</div>
+					</div>
 				</section>
 				<section>
 					<h2>Advanced query----搜尋時常用的UI元件</h2>
 					<hr>
-					<p>Slider</p>
+					<div class="grid-btw">
+						<div>
+							<p>Slider</p>
+							<p><i class="fas fa-angle-right"></i>select a value from within a range</p>
+							<p><i class="fas fa-angle-right"></i>start and end values are known</p>
+							<p><i class="fas fa-angle-right"></i>More user-friendly for a touch devices</p>
+						</div>
+						<img src="https://uxdworld.files.wordpress.com/2018/07/mango.jpg">
+						</div>
 				</section>
 				<section>
 					<h2>Advanced query--Use effective autosuggest</h2>
 					<hr>
 					<p>Use effective autosuggest</p>
-					<img src="https://cdn-images-1.medium.com/max/1600/1*AQFWWqXrznprydFeOL-axg.png">
+					<img width=500 src="https://cdn-images-1.medium.com/max/1600/1*AQFWWqXrznprydFeOL-axg.png">
 				</section>
 				<section>
 					<h2>Advanced query--一次呈現多少項目?</h2>
@@ -735,16 +875,18 @@
 				<section>
 					<h2>Advanced query--如何執行搜尋</h2>
 					<hr>
-					<p> clicking a Search or OK button, or hitting Enter key</p>
-					<p> on run-time when user changes a parameter</p>
+					<p><i class="fas fa-angle-right"></i>clicking a Search or OK button, or hitting Enter key</p>
+					<p><i class="fas fa-angle-right"></i>on run-time when user changes a parameter</p>
 					<ul>
-						<li>Executing search on run-time provides a simple and enjoyable experience to user where he can see the results
+						<li>Executing search on run-time provides a <strong>simple and enjoyable</strong> experience to user where he can see the results
 							just after each click.</li>
-						<li>Executing search on hitting a button requires user to set all parameters and then click the button to see
+						<li>使用者必須設好所有條件才能搜尋,若想改任一條件,每次都要點擊</li>
+						<li>使用者想回到之前的搜尋結果,必須重新輸入之前的查詢條件,問題是他可能忘了 </li>
+						<!-- <li>Executing search on hitting a button requires user to set all parameters and then click the button to see
 							results. If user wants to see results after each change, he has to click the button each time he makes changes
-							in parameters.</li>
-						<li>if user wants to go back to previous results, he has to revert back all changes and there is much chance that
-							he has already forgotten the defined options.</li>
+							in parameters.</li> -->
+						<!-- <li>if user wants to go back to previous results, he has to revert back all changes and there is much chance
+							that he has already forgotten the defined options.</li> -->
 					</ul>
 				</section>
 				<section>
@@ -808,12 +950,12 @@
 						<p>不同頁</p>
 						<p>好像新開視窗了</p>
 						<p>make changes==> go back?</p>
-						<a href="https://www.linkedin.com/jobs/" target="_blank">Linkin</a>
+						<p><a href="https://www.linkedin.com/jobs/" target="_blank">Linkin</a></p>
 					</div>
-					<div>
+					<div style="padding-top:25px">
 						<p>同一頁</p>
 						<p>working on the same page</p>
-						<a href="https://careers.microsoft.com/us/en/search-results?rt=professional" target="_blank">Microsoft careers</a>
+						<p><a href="https://careers.microsoft.com/us/en/search-results?rt=professional" target="_blank">Microsoft careers</a></p>
 					</div>
 				</section>
 				<section>
@@ -822,7 +964,7 @@
 					<div class="grid-btw">
 						<ul>
 							<li>顯示內容正被載入</li>
-							<li>goes wron==> proper message</li>
+							<li>goes wrong==> proper message</li>
 						</ul>
 						<img src="https://uxdworld.files.wordpress.com/2018/07/amazon-31.jpg">
 					</div>
@@ -834,7 +976,7 @@
 						<ul>
 							<li>與搜尋結果做關聯</li>
 							<li>可取消搜尋條件</li>
-							<li>see filters other page ==> disconnected behavior</li>
+							<li>see filters on other page ==> disconnected behavior</li>
 						</ul>
 						<img src="https://uxdworld.files.wordpress.com/2018/07/ebay-applied-filters.jpg" />
 					</div>
@@ -876,15 +1018,15 @@
 				<section>
 					<h2>Advanced mode for technical user</h2>
 					<hr>
-					<p>Proper and instant help</p>
-					<p>即時驗證qury format 並提示正確格式 > 搜尋後再提示</p>
+					<p><i class="fas fa-angle-right"></i>Proper and instant help</p>
+					<p><i class="fas fa-angle-right"></i>即時驗證qury format 並提示正確格式 > 搜尋後再提示</p>
 					<div class="grid-btw">
 						<img src="https://uxdworld.files.wordpress.com/2018/07/jira-advanced-2.jpg">
 						<img src="https://uxdworld.files.wordpress.com/2018/07/jira-advanced-3.jpg">
 					</div>
 				</section>
 				<section>
-					Word Sketch search result
+					Word Sketch 搜尋結果
 					<aside class="notes">
 						<ul>
 							<li>1. no result: 快樂>美,empty result,something wrong</li>
@@ -906,7 +1048,8 @@
 					<div>
 						<p><i class="fas fa-bullseye"></i>users start using apps or websites with particular aims and expectations<p>
 								<p> ==> best and easiest route</p>
-								<p> ==> solving users’ problems<span class="example">fulfill their goals/successfully interact with the product</span>
+								<p> ==> solving users’ problems<span class="example">fulfill their goals/successfully interact with the
+										product</span>
 									<p>
 					</div>
 					<p><i class="fas fa-bullseye"></i>without confusion or unnecessary clicks. </p>
@@ -939,161 +1082,46 @@
           <p>the ability to replace the text</p>
           <p>The process of the research showed that usage of recognizable and clear icons had a great potential in
             strengthening navigation as most people perceive images faster than words. </p>
-        </section> -->
-			</section>
-			<section>
-				<a href="http://lopen.linguistics.ntu.edu.tw/copens/about_copens/" target="_blank">COPENS</a>
-			</section>
-			<section>
-				<p>References</p>
-			</section>
-			<section>
+				</section> -->
 				<section>
-					<h2>HTML</h2>
+					<h2>Word Sketch Navigation</h2>
 					<hr>
 					<ul>
-						<li>HTML stands for Hyper Text Markup Language</li>
-						<li>HTML describes the structure of Web pages using markup</li>
-						<li>HTML elements are represented by tags</li>
-						<li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>
-						<li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+						<li>Icon太多,sidebar nav, top nav, 個別頁</li>
+						<li>Icon需要hover才看得到label</li>
+						<li>可以重新思考分類,以及nav item的排列順序(backgroup jobs next to subscribe?)</li>
+						<li>manage corpus應該獨立出來</li>
 					</ul>
 				</section>
 				<section>
-					<div class="btw">
-						<img src="./html_structure.png">
-						<img src="./html_structure_webpage.png">
-					</div>
-					<a href="html_intro_1.html" target="_blank">Real world!</a>
-					<div>
-						<a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro" target="_blank">Ref</a>
-					</div>
-				</section>
-				<section>
-					<div class="btw">
-						<img src="./html_structure.png">
-						<div>
-							<ul>
-								<li>The&lt;!DOCTYPE html&gt; declaration defines this document to be HTML5</li>
-								<li>The&lt;html&gt; element is the root element of an HTML page</li>
-								<li>The&lt;head&gt; element contains meta information about the document</li>
-								<li>The&lt;title&gt; element specifies a title for the document</li>
-								<li>The&lt;body&gt; element contains the visible page content</li>
-								<li>The&lt;h1&gt;telement defines a large heading</li>
-								<li>The&lt;p&gt; element defines a paragraph</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-				<section>
-					tags 長什麼樣？
-				</section>
-				<section>
-					HTML attributes
+					<h2>COCA Navigation</h2>
+					<hr>
 					<ul>
-						<li>Attributes provide additional information about HTML elements.</li>
-						<li>Attributes usually come in name/value pairs like: name="value"</li>
+						<li>Icon使用不夠有代表性,沒有附上文字說明,不好理解</li>
+						<li>i--overview跟首頁一樣</li>
+						<li>copus說明文件應該收在一起</li>
+						<li>nav 沒有active</li>
+						<li>navigation 順序再思考</li>
+						<li>search旁的item會一直改變(frequency/chart/upgrade account)</li>
+						<li>context: Once you do a search, your results will be displayed here.</li>
 					</ul>
-					<pre><code data-trim data-noescape>
-						&lt;a href="https://www.google.com/"&gt;Google LINK&lt;/a&gt;
-						</code></pre>
-					<pre><code data-trim data-noescape>
-						&lt;img src="dog.png"&gt;
-					</code></pre>
-				</section>
-				<section>
-					practice 1 - 改content
-					<p>次標題改為安安,阿宅 </p>
-					<p>內文改為你媽媽又看你發廢文 </p>
-					<p>把link改至medium.com</p>
-					<p>增加圖片描述</p>
-				</section>
-				<section>
-					常用的tags
-				</section>
-				<section>
-					practice 2 - 給圖照做 DO IT NOW!
-					<p>hello world!</p>
 				</section>
 			</section>
 			<section>
-				<section>
-					<p>What is CSS?</p>
-					<ul>
-						<li>CSS stands for Cascading Style Sheets</li>
-						<li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
-						<li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
-						<li>External stylesheets are stored in CSS files</li>
-					</ul>
-				</section>
-				<section>
-					CSS Syntax
-					<p class="fragment grow">The element Selector</p>
-					<p class="fragment grow">The id Selector</p>
-					<p class="fragment grow">The class Selector</p>
-					<p>Grouping Selectors</p>
-				</section>
-				<section>
-					CSS Colors
-					<div style="background-color: #FFA500 ">
-						Orange
-					</div>
-					<pre><code data-trim data-noescape>
-					div {
-						color: orange;
-					}
-					</code></pre>
-					<pre><code data-trim data-noescape>
-							div {
-								color: #FFA500;	
-							}
-					</code></pre>
-					<pre><code data-trim data-noescape>
-							div {
-								color: rgb(255,140,0);	
-							}
-					</code></pre>
-					<a href="https://www.w3schools.com/colors/colors_names.asp">HTML color names/</a>
-					<a href="https://htmlcolorcodes.com/" target="_blank">HTML color picker</a>
-				</section>
-				<section>
-					practice 3 - styling起手式
-					<p>改變header 顏色 大小</p>
-					<p>改變div width/height</p>
-				</section>
-				<section>
-					The CSS Box Model(Margin/Border/Padding)
-					<div class="box">abc</div>
-				</section>
-				<section>
-					<p>css grid</p>
-					<pre><code data-trim data-noescape>
-					.grid {
-						display: grid;
-						border: 10px solid green;
-						grid: 150px / auto auto auto;
-						grid-row-gap: 10px;
-						grid-column-gap: 10px;
-					}
-						</code></pre>
-					<div class="grid">
-						<div>aaa</div>
-						<div>bbb</div>
-						<div>ccc</div>
-						<div>eee</div>
-					</div>
-				</section>
-				<section>
-					CSS animation
-					<a href="https://codepen.io/pens/" target="_blank">炫技惹</a>
-				</section>
+				<h2>COPENS改頭換面</h2>
+				<hr>
+				<p><a href="http://lopen.linguistics.ntu.edu.tw/copens/about_copens/" target="_blank">COPENS</a></p>
+				<p><a href="http://140.112.147.125:8000/" target="_blank">COPENS 改版後</a></p>
 			</section>
 			<section>
-				JS
-				<p>JavaScript is the programming language of HTML and the Web.</p>
-				<p>JavaScript is easy to learn.</p>
-				<a href="https://hackernoon.com/top-3-most-popular-programming-languages-in-2018-and-their-annual-salaries-51b4a7354e06">JS
-					victory</a>
+				<h2>References</h2>
+				<hr>
+				<p><a href="https://theblog.adobe.com/4-golden-rules-ui-design/"> The 4 Golden Rules of UI Design</a></p>
+				<p><a href="https://www.nngroup.com/articles/usability-101-introduction-to-usability/">Usability 101: Introduction to
+					Usability</a></p>
+				<p><a href="https://theblog.adobe.com/putting-personas-to-work-in-ux-design-what-they-are-and-why-theyre-important/">Putting
+					Personas to Work in UX Design: What They Are and Why They’re Important</a></p>
+				<p><a href="https://uxdworld.com/2018/07/15/how-to-improve-advanced-search-ux/">How To Improve Advanced Search UX?</a></p>
 			</section>
 		</div>
 	</div>
@@ -1109,7 +1137,7 @@
 			history: true,
 			slideNumber: true,
 			spotlight: {
-				size: 60,
+				size: 80,
 				lockPointerInsideCanvas: false,
 				toggleSpotlightOnMouseDown: false,
 				presentingCursor: 'none',
