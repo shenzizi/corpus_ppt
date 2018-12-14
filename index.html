@@ -664,7 +664,6 @@
 					<h2>語料庫介面呈現</h2>
 					<hr>
 					<p><i class="fas fa-bullseye"></i>Trustworthiness in Web Design</p>
-					<p><i class="fas fa-bullseye"></i>tutorial--提供更簡易的說明</p>
 					<p><i class="fas fa-bullseye"></i>Navigation</p>
 					<p><i class="fas fa-bullseye"></i>搜尋畫面（進階搜尋）</p>
 					<p><i class="fas fa-bullseye"></i>結果呈現畫面</p>
@@ -871,6 +870,14 @@
 				<section>
 					<h2>Advanced query--一次呈現多少項目?</h2>
 					<hr>
+					<div class="grid-btw">
+						<div>
+							<p><i class="fas fa-angle-right"></i>display all values when they are less than 8</p>
+							<p><i class="fas fa-angle-right"></i>more than 8, display MORE option</p> 
+							<p><i class="fas fa-angle-right"></i>item still exceeds, provide remaining items in an extended list or a dialog box</p>
+						</div>
+						<img src="https://uxdworld.files.wordpress.com/2018/07/ebay-13.jpg">
+			  	</div>
 				</section>
 				<section>
 					<h2>Advanced query--如何執行搜尋</h2>
@@ -878,7 +885,7 @@
 					<p><i class="fas fa-angle-right"></i>clicking a Search or OK button, or hitting Enter key</p>
 					<p><i class="fas fa-angle-right"></i>on run-time when user changes a parameter</p>
 					<ul>
-						<li>Executing search on run-time provides a <strong>simple and enjoyable</strong> experience to user where he can see the results
+						<li>Executing search on run-time provides a simple and enjoyable experience to user where he can see the results
 							just after each click.</li>
 						<li>使用者必須設好所有條件才能搜尋,若想改任一條件,每次都要點擊</li>
 						<li>使用者想回到之前的搜尋結果,必須重新輸入之前的查詢條件,問題是他可能忘了 </li>
@@ -1006,7 +1013,7 @@
 					</div>
 				</section>
 				<section>
-					<h2>搜尋結果呈現</h2>
+					<h2>搜尋結果呈現--others</h2>
 					<hr>
 					<ul>
 						<li>Provide accurate and relevant results</li>
@@ -1029,13 +1036,14 @@
 					Word Sketch 搜尋結果
 					<aside class="notes">
 						<ul>
-							<li>1. no result: 快樂>美,empty result,something wrong</li>
+							<li>1. love亂選,something wrong</li>
 							<li>2. nothing found, 兩種不同的行為</li>
 							<li>3. 有x 但不能按</li>
-							<li>慢慢 > subcorpus filter沒有出現提示</li>
-							<li>慢慢 > word > verb filter沒有出現提示 </li>
-							<li>慢慢 > pos tag上的數字跟真正的數字對不上</li>
-							<li>慢慢 > pos tag應該也是個filter條件可以被取消</li>
+							<li>detail可擺右邊</li>
+							<li>subcorpus filter沒有出現提示</li>
+							<li>verb filter沒有出現提示 </li>
+							<li>tag上的數字跟真正的數字對不上</li>
+							<li>pos tag應該也是個filter條件可以被取消</li>
 							<li>慢慢 > pos tag(verb +-5) > collocation 失去,wording todo desc?/數字</li>
 							<li>word list filter 沒有辦法按</li>
 						</ul>
@@ -1052,23 +1060,30 @@
 										product</span>
 									<p>
 					</div>
-					<p><i class="fas fa-bullseye"></i>without confusion or unnecessary clicks. </p>
+					<p><i class="fas fa-bullseye"></i>without confusion or unnecessary clicks </p>
 				</section>
 				<section>
 					<h2>製作Navigation前先想想...</h2>
 					<hr>
 					<ul>
-						<li>What pages are needed for this site?</li>
+						<li>這個網站需要哪些頁面？</li>
+						<li>各頁面的主題為何？頁面的內容是否根據相關性作組織？</li>
+						<li>之後若要擴充內容,會花多少力氣?</li>
+						<li>有多少user groups會使用你的網站?<span class="example"> (e.g. logged in/ out, subscription types, advertisers, etc.)</span></li>
+						<li>不同的user groups 使用網站的目標是什麼?</li>
+						<!-- <li>What pages are needed for this site?</li>
 						<li>Does each page have a purpose within the wider scheme, and is the content broken up into sensible,
 							relatable chunks?</li>
 						<li>What allowances must be made for adding content in the future?</li>
 						<li>What user groups are you working with? (e.g. logged in/ out, subscription types, advertisers, etc.)</li>
-						<li>What is the primary goal for each type of user?</li>
+						<li>What is the primary goal for each type of user?</li> -->
 					</ul>
 				</section>
 				<section>
-					<p>KEEP IT SIMPLE</p>
-					<p>And yet, simplicity can be deceptive. Dig deeper and you may discover that what is actually quite
+					<h2>製作Navigation前先想想...</h2>
+					<hr>
+					<p>Keep it simple</p>
+					<p>simplicity can be deceptive. Dig deeper and you may discover that what is actually quite
 						complex has been cleverly packaged in a way that feels simple. This is IA in action.</p>
 				</section>
 				<section>
@@ -1100,7 +1115,7 @@
 						<li>Icon使用不夠有代表性,沒有附上文字說明,不好理解</li>
 						<li>i--overview跟首頁一樣</li>
 						<li>copus說明文件應該收在一起</li>
-						<li>nav 沒有active</li>
+						<li>nav 沒有active的狀態</li>
 						<li>navigation 順序再思考</li>
 						<li>search旁的item會一直改變(frequency/chart/upgrade account)</li>
 						<li>context: Once you do a search, your results will be displayed here.</li>
